@@ -1,6 +1,8 @@
 site_name: PackDev Docs
 site_url: https://pansmith.github.io/docs/
 docs_dir: docs
+repo_url: https://github.com/ThePansmith/docs
+edit_url: blob/master/docs/
 
 theme:
   name: material
@@ -33,6 +35,7 @@ theme:
     - toc.follow
     - content.code.annotate
     - content.action.view
+    - content.action.edit
 
 plugins:
   - search
