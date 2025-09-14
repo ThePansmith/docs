@@ -1,0 +1,7 @@
+nav:
+  - index.md
+  - getting-started
+  - saving-time
+  - 'KubeJS and Datapacking': datapacking
+  - 'Advanced Functions': advanced
+  - finishing-touches
