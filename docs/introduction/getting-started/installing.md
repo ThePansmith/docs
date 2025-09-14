@@ -82,7 +82,12 @@ When you are first getting started, these three folders will be the most importa
 
 <!-- You can find type-specific logs in logs/kubejs/ directory -->
 
-### Other Useful Tools
+## Useful commands
+Typing in `/kubejs hand` ingame will display your currently held item's name and tags, clicking on one of these will copy it to your clipboard. This can also be shortened to `/kjs hand`, and you can also use the up arrow to resend a previously send command.
+
+The `/kubejs hotbar` and `/kubejs inventory` will print what you are currently holding into chat as an array, which you can click on as well.
+
+## Other Useful Tools
 
 Code is just a language that computers can understand. However, the grammar of the language, called syntax for code, is very precise. When you code has a syntactical error, the computer does not know what to do and will probably do something that you do not desire.
 
