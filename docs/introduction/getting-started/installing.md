@@ -1,4 +1,10 @@
-# Introduction and Installation
+---
+title: Introduction and Installation
+---
+
+KubeJS is a mod that lets you modify a lot about Minecraft, in a quick and easy way. As such, it's become the prime tool for Modpack Developers looking to add and edit things together.
+
+---
 
 ### Installation
 
@@ -13,12 +19,12 @@ When you first install KubeJS, you will need to launch Minecraft with the mods (
 
 Everything you do in KubeJS in located in the kubejs folder in your instance.
 
-- In Prism the file structure will look like `polymc > instances > instance name > minecraft > kubejs`
-- In CurseForge launcher the file structure will look like `curseforge > minecraft > instances > instance name > kubejs`
-- In all of the above cases the `instance name` is the name of the instance
-- In the normal Minecraft launcher it will be `.minecraft > kubejs`, unless you changed the instance folder.
+- In Prism the file structure will look like `polymc > instances > (instance name) > minecraft > kubejs`
+- In the CurseForge launcher the file structure will look like `curseforge > minecraft > instances > (instance name) > kubejs`
+    - In all of the above cases the `(instance name)` is the name of the instance
+- In the normal Minecraft launcher it will be `.minecraft > kubejs`, unless you changed the instance folder, but using the normal launcher for modding is highly discourged, due to the above offering utility.
 
-From now on this will be referenced as the kubejs folder.
+From now on, this will be referenced as the kubejs folder.
 
 ### The contents 
 When you are first getting started, these three folders will be the most important.

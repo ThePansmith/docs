@@ -2,8 +2,6 @@
 title: Tags
 ---
 
-## What are tags?
-
 Minecraft uses tags to group items, blocks, fluids, and entity types together for various game mechanics. Tags are essentially collections of game elements that share common characteristics or purposes. They're used extensively throughout the game for: 
 
 - **Recipes** (using item tags)
@@ -13,6 +11,8 @@ Minecraft uses tags to group items, blocks, fluids, and entity types together fo
 - and more!
 
 You can easily view an item/block's tags by holding it and using `/kubejs hand`. If advanced tooltips are enabled, it will also show an item's tags when hovered over. A list of minecraft's tags can be viewed [here](https://minecraft.wiki/w/Tag_(Java_Edition)#List_of_tag_types).
+
+---
 ## Adding Tags
 !!! note
     You do not have to manually define the tags themselves anywhere, using any of the following functions below will also register the tag.
@@ -20,7 +20,6 @@ You can easily view an item/block's tags by holding it and using `/kubejs hand`.
 #### Item tags 
 These tags are primarily used in recipes, and can also be used to influnce how a item behaves when it is dropped, equipped, or used. 
 ```javascript
-// Adding to tags
 ServerEvents.tags('item', event => {
         event.add('forge:cobblestone', 'minecraft:diamond_ore') //(1)
         event.remove('forge:cobblestone', 'minecraft:mossy_cobblestone') //(2)

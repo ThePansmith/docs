@@ -1,17 +1,17 @@
 ---
 title: Your First Mechanic
 ---
-# Your First Mechanic
 
 !!! warning
-    Temp doc imported, rewrite this!
+    Temporary document imported, rewrite this!
 
-By now you have created [a custom recipe](https://mods.latvian.dev/books/kubejs-legacy/page/your-first-script), or maybe [multiple](https://mods.latvian.dev/books/kubejs-legacy/page/recipeeventjs), or even[ manipulated tags](https://mods.latvian.dev/books/kubejs-legacy/page/tageventjs), or created custom [items ](https://mods.latvian.dev/books/kubejs-legacy/page/custom-items)or [blocks](https://mods.latvian.dev/books/kubejs-legacy/page/custom-blocks).
+By now you have created a custom recipe, or maybe multiple, or evenmanipulated tags, or created custom items or blocks.
 
-But you want to do more then that, you want to add a custom mechanic, for example milking a goat.
+But you want to do more then that, you want to add a custom mechanic, for example milking a goat. The first step is to break down your idea into smaller pieces, until each piece is something you can code.  
 
-The first step is to break down your idea into smaller pieces, until each piece is something you can code.  
-One thing to note, is that most all things are caused by some trigger. Such as an entity dieing, or a block being placed. These are detected by events.
+One thing to note, is that most all things are caused by some trigger. Such as an entity dying, or a block being placed. These are all detected by events.
+
+---
 
 ##### Detecting Events
 
