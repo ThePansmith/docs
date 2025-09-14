@@ -34,7 +34,6 @@ theme:
     - navigation.top
     - toc.follow
     - content.code.annotate
-    - content.action.view
     - content.action.edit
 
 plugins:
