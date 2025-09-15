@@ -185,7 +185,7 @@ event.replaceInput(
 ## Your First Custom Items
 
 !!! note
-    Recall that custom items are done in the Startup Scripts folder, which means that changes done here will not come into effect until you reload.
+    Recall that custom items are done in the Startup Scripts folder, which means that changes done here will not come into effect until you relaunch Minecraft.
 
 ```js
 StartupEvents.registry('item', event => { // (1)
