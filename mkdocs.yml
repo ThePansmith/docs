@@ -2,7 +2,7 @@ site_name: PackDev Docs
 site_url: https://pansmith.github.io/docs/
 docs_dir: docs
 repo_url: https://github.com/ThePansmith/docs
-edit_url: blob/master/docs/
+edit_uri: blob/master/docs/
 
 theme:
   name: material
