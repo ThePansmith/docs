@@ -79,7 +79,8 @@ redstoneTransmute("minecraft:sand", "minecraft:red_sand")
 ```
 
 ## Recipe Schemas
-!!! WIP
+!!! abstract "Work In Progress"
+    The contents found here are not completely documented, please consider submitting a Pull Request with additional information.
 
 !!! note
     This is being written with 1.20 currently being in the lead of packdev COLTS vote in mind, KubeJS 1.21 handles this differently. 
@@ -147,7 +148,7 @@ Reviewing the Java implementation reveals an additional field:
 - An optional integer `power_rate` field 
 
 
-??? java
+??? hint "The Java implementation"
     ```java
   	  public static class Serializer implements RecipeSerializer<CombinationRecipe> {
   		  public static final MapCodec<CombinationRecipe> CODEC = RecordCodecBuilder.mapCodec(builder ->
