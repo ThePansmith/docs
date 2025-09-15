@@ -30,12 +30,13 @@ KubeJS works by calling events and acting upon them. The `recipes` event can be 
 
 ```js
 ServerEvents.recipes(event => { // (1)
-    console.log('Hello! The recipe event has fired!') // (2)
+    console.log('Hello! The recipe event has fired!') // (2) (3)
 });
 ```
 
 1. You can replace `event` with any name, as long as you update it inside the callback too.  
 2. The code inside the curly braces is the callback. You can modify as many recipes as you like here.
+3. Like mentioned before, the `console.log` line can be removed, it is just here for demonstration purposes 
 
 ### Shapeless Recipes
 
@@ -51,6 +52,8 @@ event.shapeless('minecraft:dandelion', 3, [ // (1)
 
 1. **Output**: Produces 3 dandelions.  
 2. **Input**: An array of items required for the recipe. Maximum item count is 9.
+
+Putting that code into your recipe event listener and reloading the script will cause it to be registered, it's as simple as that! 
 
 ### Shaped Recipes
 
