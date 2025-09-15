@@ -18,24 +18,35 @@ You can easily view an item/block's tags by holding it and using `/kubejs hand`.
     You do not have to manually define the tags themselves anywhere, using any of the following functions below will also register the tag.
 ### Tagging in Server Events
 #### Item tags 
-These tags are primarily used in recipes, and can also be used to influnce how a item behaves when it is dropped, equipped, or used. 
+These tags are primarily used in recipes, and can also be used to influence how a item behaves when it is dropped, equipped, or used. 
 ```javascript
 ServerEvents.tags('item', event => {
         event.add('forge:cobblestone', 'minecraft:diamond_ore') //(1)
         event.remove('forge:cobblestone', 'minecraft:mossy_cobblestone') //(2)
         event.removeAllTagsFrom('minecraft:stick') //(3)
         event.removeAll('forge:ingots/copper') //(4)
-        event.add('forge:completely_new_tag', 'minecraft:clay_ball') //(5)
-        event.add('forge:stones', '#forge:stone') //(6)
+        event.add('mymodpack:completely_new_tag', 'minecraft:clay_ball') //(5)
+        event.add('mymodpack:stones', '#forge:stone') //(6)
+        event.add('minecraft:stone_pressure_plates', [
+            'minecraft:stone_pressure_plate',
+            'minecraft:polished_blackstone_pressure_plate'
+        ]) //(7)
+        event.add('mymodpack:stone_redstone_activators', [
+            '#minecraft:stone_buttons',
+            '#minecraft:stone_pressure_plates',
+            'minecraft:lever'
+        ]) //(8)
 })
 ```
 
-1. **Add to Tag**: Adds `minecraft:diamond_ore` to the `forge:cobblestone` tag.  
-2. **Remove from Tag**: Removes `minecraft:mossy_cobblestone` from the `forge:cobblestone` tag.  
+1. **Add to Tag**: Adds `minecraft:diamond_ore` to the `#forge:cobblestone` tag.  
+2. **Remove from Tag**: Removes `minecraft:mossy_cobblestone` from the `#forge:cobblestone` tag.  
 3. **Remove All Tags**: Clears all tags associated with `minecraft:stick`.  
-4. **Remove All Entries**: Clears all items from the `forge:ingots/copper` tag.  
-5. **Create New Tag**: Creates a new tag `forge:completely_new_tag` and adds `minecraft:clay_ball` to it.  
-6. **Tag Nesting**: Adds the `forge:stone` tag as a child of the `forge:stones` tag.  
+4. **Remove All Entries**: Clears all items from the `#forge:ingots/copper` tag.  
+5. **Create New Tag**: Creates a new tag `#mymodpack:completely_new_tag` and adds `minecraft:clay_ball` to it. New tags can use any namespace.
+6. **Tag Nesting**: Adds the `forge:stone` tag as a child of the `#mymodpack:stones` tag.
+7. **Array of Entries**: Adds `minecraft:stone_pressure_plate` and `minecraft:polished_blackstone_pressure_plate` to the new tag `#minecraft:stone_pressure_plates`.
+8. **Array of Entries and Tags**: Adds the `#minecraft:stone_buttons` and `#minecraft:stone_pressure_plates` tags as children and adds `minecraft:lever` to the `#mymodpack:stone_redstone_activators` tag.
 
 #### Block tags
 Block tags influnce what a behaviors a block has, as well as seeing use in world generation.
