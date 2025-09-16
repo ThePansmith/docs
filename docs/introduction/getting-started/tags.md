@@ -71,7 +71,7 @@ StartupEvents.registry('item', event => {
 ## Using tags in recipes
 !!! warning
     Recipes use item tags, not block or fluid tags. Even if items representing those are blocks, like `minecraft:cobblestone`, it still uses an item tag for recipes.
-Tags can be used in most places here items are supported, with the hash sign. Tags can't be used as a recipe output.
+Tags can be used in most places where items are supported, with the hash sign. Tags can't be used as a recipe output.
 
 ```js
 event.shaped(
