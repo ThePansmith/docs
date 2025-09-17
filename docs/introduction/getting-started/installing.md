@@ -8,10 +8,9 @@ KubeJS is a mod that lets you modify a lot about Minecraft, in a quick and easy 
 
 ### Installation
 
-Install [the mod](https://www.curseforge.com/minecraft/mc-mods/kubejs) and its two dependencies [Architectury](https://www.curseforge.com/minecraft/mc-mods/architectury-api) and [Rhino](https://www.curseforge.com/minecraft/mc-mods/rhino).  
-Make you use the most resent version of each mods for your version.  
+Install [the mod](https://www.curseforge.com/minecraft/mc-mods/kubejs) and its two dependencies [Architectury](https://www.curseforge.com/minecraft/mc-mods/architectury-api) and [Rhino](https://www.curseforge.com/minecraft/mc-mods/rhino). Make sure that you use the most resent version of each mods for your version.  
 
-When you first install KubeJS, you will need to launch Minecraft with the mods (and the game not crashing) to generate the some folders and files.
+When you first install KubeJS, you will need to launch Minecraft with the mods to generate the some folders and files.
 
 ## The KubeJS folder
 
