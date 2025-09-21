@@ -165,10 +165,11 @@ StartupEvents.registry('item', event => {
 ## Foodeaten
 !!! note
 	This is a server event.
-
+```js
 ItemEvents.foodEaten(event => {
   const { player, item } = event;
   if (item.id === 'kubejs:magic_steak') {
     player.tell(Text.gold('Yummy Yummy!'));
   }
 });
+```

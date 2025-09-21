@@ -7,7 +7,7 @@ If a mod supports Datapack recipes, you can add recipes for it without any addon
 ---
 
 ## Writing a custom recipe
-Here's an example of adding a Farmer's Delight cutting board recipe, which defines an input, output, and tool taken straight from [their GitHub](https://github.com/vectorwing/FarmersDelight/blob/1.20.1/src/generated/resources/data/farmersdelight/recipes/cutting/cake.json). Note how the variables match between the datapack file and an `event.custom` recipe replicating it.
+Here's an example of adding a Farmer's Delight cutting board recipe, which defines an input, output, and tool taken straight from [their GitHub](https://github.com/vectorwing/FarmersDelight/blob/1.20.1/src/generated/resources/data/farmersdelight/recipes/cutting/cake.json). Notice how the variables match between the datapack file and an `event.custom` recipe replicating it.
 
 
 === "Datapack File"
@@ -56,7 +56,7 @@ Here's an example of adding a Farmer's Delight cutting board recipe, which defin
 
 
 ### Looping 
-Of course, this starts becoming powerful when you start to combine them with a [loop, function or otherwise](https://pastebin.com/raw/yy3i5L5a), allowing you to easily add tons of custom recipes without having to manage a single datapack file.
+Of course, this starts becoming powerful when you start to combine them with a [loop, function or otherwise](../saving-time/loops.md), allowing you to easily add tons of custom recipes without having to manage a single datapack file.
 
 ```js
 let redstoneTransmute = (input, output) => {
@@ -180,6 +180,7 @@ Reviewing the Java implementation reveals an additional field:
     }
     ```
 
+### Schema Creation
 After reviewing KubeJS's [schema](https://github.com/KubeJS-Mods/KubeJS/tree/2001/common/src/main/java/dev/latvian/mods/kubejs/recipe/schema) and [component](https://github.com/KubeJS-Mods/KubeJS/tree/2001/common/src/main/java/dev/latvian/mods/kubejs/recipe/component) classes, you can create the schema using `ItemComponents` and `NumberComponent`:
 
 ```js
@@ -204,7 +205,6 @@ StartupEvents.recipeSchemaRegistry(event => {
 2. Note that the order of the keys does not have to match the java code or any existing datapack files, so feel free to organize it into whatever way is most comfortable for writing with.
 3. If not set, defaults to a value of 500000
 
-### Using it
 Now for the fun part: Actually using it!
 
 ```js

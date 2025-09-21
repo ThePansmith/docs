@@ -207,7 +207,7 @@ StartupEvents.registry('item', event => { // (1)
 3. This texture would be located at `kubejs/assets/kubejs/textures/item/earlygame/treated_leather.png`. You can use different mod IDs as well.  
 4. If you want a custom model, you can create one in Blockbench and put it in `kubejs/assets/kubejs/models/item/custom_sword.json`. This is true for both items and blocks.
 
-More info on the large variety of itembuilder methods available can be found [here](events/startup/registry/itembuilder.md).
+More info on the large variety of itembuilder methods available can be found [here](../../events/startup/registry/itembuilder.md).
 
 ### Custom Blocks
 
@@ -243,11 +243,11 @@ StartupEvents.registry('block', event => { // (1)
 11. Or pickaxe.  
 12. Requires a tool with at least iron tier to mine the block.
 
-Like with items, blocks [have a large number](events/startup/registry/blockbuilder.md) of methods available to you.
+Like with items, blocks [have a large number](../../events/startup/registry/blockbuilder.md) of methods available to you.
 
 ### Custom Fluids
 
-Fluids are also like the above two; their methods can be found [here](events/startup/registry/fluidbuilder.md).
+Fluids are also like the above two; their methods can be found [here](../../events/startup/registry/fluidbuilder.md).
 
 ```js
 StartupEvents.registry('fluid', event => { // (1)
@@ -291,7 +291,7 @@ JEIEvents.hideItems(event => {
 1. Hides the copper barrel item from appearing in JEI.  
 2. Hides anything that matches the regex filter from appearing in JEI.
 
-Regex (the pink text) and other methods of saving time are covered in the "saving time" section.
+Regex (the pink text) and other methods of saving time are covered [here](../saving-time/loops.md).
 
 ### Tooltips
 
