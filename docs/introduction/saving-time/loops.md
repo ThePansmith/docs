@@ -2,6 +2,9 @@
 title: Loops, Functions, and Regex
 ---
 
+!!! abstract "Work In Progress"
+    The contents found here are not completely done, please consider submitting a Pull Request to improve it.
+
 # Regex, Loops, and Functions
 
 After reading the previous chapters, you might have started thinking about custom recipes and items. You might have even considered how many recipes you would need to tweak and how much time it would take to write them individually, like datapacks. Thankfully, you don't have to do that! You have a lot of tools at your disposal to make your life easier and your code more compact.
