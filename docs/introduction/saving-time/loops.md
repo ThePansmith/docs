@@ -11,7 +11,7 @@ After reading the previous chapters, you might have started thinking about custo
 
 ---
 
-# Arrays
+## Arrays
 Some events allow you to use an array instead of just a single item, enabling you to perform actions on multiple items rather than needing separate methods for each.
 
 ```js
@@ -22,8 +22,7 @@ JEIEvents.hideItems(event => {
 
 1. Hides both the `ae2:inscriber` and the `ae2:vibration_chamber`
 
-
-# Loops
+## Loops
 Loops allow you to iterate over arrays and perform actions on each element. This is particularly useful when you have a list of items and want to apply the same logic to all of them.
 
 Here's an example of using a `foreach` loop to define recipes for upgrading furnaces:
@@ -53,10 +52,29 @@ furnaces.forEach(([furnace, mat, base]) => { // (1)
 2. **Recipe Definition**: For each furnace, a shaped recipe for the output furnace (`furnace`) is defined using the provided material (`mat`) and base furnace (`base`).
 
 
-# Functions
+## Functions
 Functions allow you to reuse code by defining a function and repeatedly calling it with multiple arguments, even across different files! Knowing a little bit of [javascript](https://www.w3schools.com/js/default.asp) can go a very long way when working with functions.
 
-## Helper Functions
+
+```js
+  let potting = (output, pottedInput) => { // (1)
+    event.shaped(output, [
+      'BIB',
+      ' B '
+    ], {
+      B: 'minecraft:brick',
+      I: pottedInput
+    })
+  }
+
+  potting('kubejs:potted_snowball', 'minecraft:snowball') // (2)
+  potting('kubejs:potted_lava', 'minecraft:lava_bucket')
+  potting('minecraft:blast_furnace', 'minecraft:furnace')
+```
+1. Defines helper function `potting` with the elements of of `output` and `pottedInput`
+2. Creating shaped recipes using the helper
+
+### Helper Functions
 Using the knowledge that you can call constants across different files, you could create a helper file with various functions in it and simply call them from anywhere.
 
 ```js
@@ -89,7 +107,7 @@ donutCraft(event, "sophisticatedbackpacks:stack_upgrade_tier_1", "sophisticatedb
 ### Applying knowledge 
 Of course, functions aren't as rigid as the above examples imply. With a little bit of JavaScript knowledge, you can create pretty some nice things.
 
-The function below is excerpted from [CABIN](https://github.com/ThePansmith/CABIN), and  is used to generate the recipes used to turn machines into usable parts. If the fourth parameter is omitted, it defaults to creating a stonecutting recipe instead.
+The function below is excerpted from [CABIN](https://github.com/ThePansmith/CABIN), and is used to generate the recipes used to turn machines into usable parts. If the fourth parameter is omitted, it defaults to creating a stonecutting recipe instead.
 
 ```js
 const createMachine = (machineItem, event, outputIngredient, inputIngredient) => { // (1)
@@ -138,7 +156,7 @@ createMachine("minecraft:obsidian", event, Item.of("minecraft:crying_obsidian", 
 ```
 
 
-### Callback Functions
+#### Callback Functions
 Likewise, you can define functions that call other functions. For example:
 
 ```js
@@ -166,7 +184,7 @@ if (Platform.isLoaded("createdeco")) { // (1)
 2. Ifs, switches, and otherwise are not limited to just functions or mechanics!
 
 
-# Regex
+## Regex
 A **regex**, shorthand for "regular expression", is a pattern describing a certain amount of text. Essentially, it acts as a filter, allowing anything that matches to pass. Regex can be quite powerful, enabling you to search with surprisingly complex options. Getting into the nitty-gritty of regex is beyond this guide (consider looking [here](https://regexr.com/) for a starting place), but here are some practical examples:
 
 ```js

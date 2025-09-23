@@ -54,6 +54,7 @@ Here's an example of adding a Farmer's Delight cutting board recipe, which defin
     });
     ```
 
+<!-- Note that you are effectively recreating the JSON file, and how mods handle recipes can vary from mod to mod, so no one bit of advice will apply to all mods. -->
 
 ### Looping 
 Of course, this starts becoming powerful when you start to combine them with a [loop, function or otherwise](../saving-time/loops.md), allowing you to easily add tons of custom recipes without having to manage a single datapack file.
@@ -133,7 +134,7 @@ Here's a datapack example:
 }
 ```
 
-The field:
+Let's break it down into it's parts:
 
 - An ItemStack `input` field
 
@@ -214,4 +215,3 @@ Now for the fun part: Actually using it!
         1600000, 160000
     )
 ```
-

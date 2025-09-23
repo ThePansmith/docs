@@ -18,6 +18,10 @@ Adds VSCode intellisense support for KubeJS.
     <figcaption>The curseforge page explains how to install.</figcaption>
 </figure>
 
+## [KubeJS Offline Documenation](https://www.curseforge.com/minecraft/mc-mods/kubejs-offline)
+KubeJS Offline is a mod that dumps all class data at runtime into a single html file using a single command - `/kubejs_offline`.
+
+Previews of these pages can be found on the curseforge mod page.
 
 ## [Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almost-unified)
 Helps unify resources (ingots, etc) without having to do it manually. 
