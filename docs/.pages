@@ -1,5 +1,4 @@
 nav:
   - index.md
-  - introduction
-  - events
-  - examples
+  - 'Introduction': introduction
+  - 'Documentation': events

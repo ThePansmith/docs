@@ -2,7 +2,6 @@
 title: Reflection
 ---
 
-
-# Header
+# Reflection
 
 Page content here...
