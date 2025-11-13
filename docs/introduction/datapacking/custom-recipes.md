@@ -84,7 +84,7 @@ redstoneTransmute("minecraft:sand", "minecraft:red_sand")
     The contents found here are not completely documented, please consider submitting a Pull Request with additional information.
 
 !!! note
-    This is being written with 1.20 currently being in the lead of packdev COLTS vote in mind, KubeJS 1.21 handles this differently. 
+    KubeJS 1.21 handles this differently. 
 
 Now, if you have a recipe type that you use frequently, it might be worth writing your own **recipe schema** for it. Recipe schemas are sets of keys that define how a recipe is constructed. *How* this works is covered in more detail in the reflection chapter (for those unfamiliar with Java, please read that first), and assumes you have at least basic knowledge of how recipes work.
 
